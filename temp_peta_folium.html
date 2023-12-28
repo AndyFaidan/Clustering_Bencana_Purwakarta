@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_52f4e7e5e2c07a065181c54708d62488 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_52f4e7e5e2c07a065181c54708d62488" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_52f4e7e5e2c07a065181c54708d62488 = L.map(
+                "map_52f4e7e5e2c07a065181c54708d62488",
+                {
+                    center: [-6.599135294117647, 107.44514705882354],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b7e5d3d00aff217a10c203c4acb5bfa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5b7e5d3d00aff217a10c203c4acb5bfa.addTo(map_52f4e7e5e2c07a065181c54708d62488);
+        
+    
+            var marker_cluster_80703ae2b49b31d1b82ef25c7a59b392 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_90ad74245604f24d0bef92e51d3d018a = L.marker(
+                [-6.5272, 107.4115],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_59e7708813eddbbb1bd6ac636fcb8254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_90ad74245604f24d0bef92e51d3d018a.setIcon(icon_59e7708813eddbbb1bd6ac636fcb8254);
+        
+    
+        var popup_0ba9e2a35e176c902f65ca648ec2993e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e47c2a65a7b05475387045f9e742da07 = $(`<div id="html_e47c2a65a7b05475387045f9e742da07" style="width: 100.0%; height: 100.0%;">Jatiluhur<br>Density Category: Padat</div>`)[0];
+                popup_0ba9e2a35e176c902f65ca648ec2993e.setContent(html_e47c2a65a7b05475387045f9e742da07);
+            
+        
+
+        marker_90ad74245604f24d0bef92e51d3d018a.bindPopup(popup_0ba9e2a35e176c902f65ca648ec2993e)
+        ;
+
+        
+    
+    
+            var marker_b484062235e5e16f75b34833e48af54d = L.marker(
+                [-6.5389, 107.2941],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_c8745d9ebbf585070011ff4b0980aba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b484062235e5e16f75b34833e48af54d.setIcon(icon_c8745d9ebbf585070011ff4b0980aba1);
+        
+    
+        var popup_2a4aa528152aa6f68913c7996a13a0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1516af09c9ba1a8e6dbb124554c11835 = $(`<div id="html_1516af09c9ba1a8e6dbb124554c11835" style="width: 100.0%; height: 100.0%;">Sukasari<br>Density Category: Tidak Padat</div>`)[0];
+                popup_2a4aa528152aa6f68913c7996a13a0a7.setContent(html_1516af09c9ba1a8e6dbb124554c11835);
+            
+        
+
+        marker_b484062235e5e16f75b34833e48af54d.bindPopup(popup_2a4aa528152aa6f68913c7996a13a0a7)
+        ;
+
+        
+    
+    
+            var marker_f3693d7c7d06d856fbce8ad21c15628f = L.marker(
+                [-6.6993, 107.3168],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_8e323d9e2f76da08ab0c5a5895affe03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f3693d7c7d06d856fbce8ad21c15628f.setIcon(icon_8e323d9e2f76da08ab0c5a5895affe03);
+        
+    
+        var popup_144cc2d4efd63e6d04beaadd5a1b395f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8c4504d24ac4cce1df860e4b59774ca = $(`<div id="html_d8c4504d24ac4cce1df860e4b59774ca" style="width: 100.0%; height: 100.0%;">Maniis<br>Density Category: Tidak Padat</div>`)[0];
+                popup_144cc2d4efd63e6d04beaadd5a1b395f.setContent(html_d8c4504d24ac4cce1df860e4b59774ca);
+            
+        
+
+        marker_f3693d7c7d06d856fbce8ad21c15628f.bindPopup(popup_144cc2d4efd63e6d04beaadd5a1b395f)
+        ;
+
+        
+    
+    
+            var marker_b09d791bc4f75f326808a28fe947f82c = L.marker(
+                [-6.6717, 107.3568],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_5e45b97a7a495201ef45eae2c742ac09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b09d791bc4f75f326808a28fe947f82c.setIcon(icon_5e45b97a7a495201ef45eae2c742ac09);
+        
+    
+        var popup_440f0e23bd161ac8280f36b1119ecb52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13f87e53efbdc76432ab25b1ea3e0487 = $(`<div id="html_13f87e53efbdc76432ab25b1ea3e0487" style="width: 100.0%; height: 100.0%;">Tegalwaru<br>Density Category: Tidak Padat</div>`)[0];
+                popup_440f0e23bd161ac8280f36b1119ecb52.setContent(html_13f87e53efbdc76432ab25b1ea3e0487);
+            
+        
+
+        marker_b09d791bc4f75f326808a28fe947f82c.bindPopup(popup_440f0e23bd161ac8280f36b1119ecb52)
+        ;
+
+        
+    
+    
+            var marker_2406da9635119d90b086e770f30c8ed5 = L.marker(
+                [-6.6415, 107.3906],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_9405869f79d66db28f8c716be70b990a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2406da9635119d90b086e770f30c8ed5.setIcon(icon_9405869f79d66db28f8c716be70b990a);
+        
+    
+        var popup_2c8b9c5406d49a1bd12fec9c11cef280 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f2e5e0d104697098fadfde244b2d5a2 = $(`<div id="html_6f2e5e0d104697098fadfde244b2d5a2" style="width: 100.0%; height: 100.0%;">Plered<br>Density Category: Tidak Padat</div>`)[0];
+                popup_2c8b9c5406d49a1bd12fec9c11cef280.setContent(html_6f2e5e0d104697098fadfde244b2d5a2);
+            
+        
+
+        marker_2406da9635119d90b086e770f30c8ed5.bindPopup(popup_2c8b9c5406d49a1bd12fec9c11cef280)
+        ;
+
+        
+    
+    
+            var marker_51dd9576c0b2a417155b44ae781fca08 = L.marker(
+                [-6.6166, 107.4203],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_81c619e727527901898447c419654f25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_51dd9576c0b2a417155b44ae781fca08.setIcon(icon_81c619e727527901898447c419654f25);
+        
+    
+        var popup_2fe15d7377a47bec5d11bcec64f2ee9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c65b49e6bdd03736d1bd6c7f80e382ab = $(`<div id="html_c65b49e6bdd03736d1bd6c7f80e382ab" style="width: 100.0%; height: 100.0%;">Sukatani<br>Density Category: Padat</div>`)[0];
+                popup_2fe15d7377a47bec5d11bcec64f2ee9e.setContent(html_c65b49e6bdd03736d1bd6c7f80e382ab);
+            
+        
+
+        marker_51dd9576c0b2a417155b44ae781fca08.bindPopup(popup_2fe15d7377a47bec5d11bcec64f2ee9e)
+        ;
+
+        
+    
+    
+            var marker_2daac5fc2e9659a5a4c4a1fafef46d29 = L.marker(
+                [-6.6924, 107.4372],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_0463de854fb3364f9d88f37d7c529bcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2daac5fc2e9659a5a4c4a1fafef46d29.setIcon(icon_0463de854fb3364f9d88f37d7c529bcc);
+        
+    
+        var popup_195d0def19b1c650128ace3081907e5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1f60f6738305c15b0040e826ce0b1a0 = $(`<div id="html_c1f60f6738305c15b0040e826ce0b1a0" style="width: 100.0%; height: 100.0%;">Darangdan<br>Density Category: Padat</div>`)[0];
+                popup_195d0def19b1c650128ace3081907e5e.setContent(html_c1f60f6738305c15b0040e826ce0b1a0);
+            
+        
+
+        marker_2daac5fc2e9659a5a4c4a1fafef46d29.bindPopup(popup_195d0def19b1c650128ace3081907e5e)
+        ;
+
+        
+    
+    
+            var marker_184a6a635adacec695b475bedcc65ba7 = L.marker(
+                [-6.7098, 107.5017],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_ac0e1c39064e7f21fa1f761ec123fa18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_184a6a635adacec695b475bedcc65ba7.setIcon(icon_ac0e1c39064e7f21fa1f761ec123fa18);
+        
+    
+        var popup_86c53b124cf64c9a054391bfb8cd7e20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_001ad7ac062a3af609e101d011ec8752 = $(`<div id="html_001ad7ac062a3af609e101d011ec8752" style="width: 100.0%; height: 100.0%;">Bojong<br>Density Category: Padat</div>`)[0];
+                popup_86c53b124cf64c9a054391bfb8cd7e20.setContent(html_001ad7ac062a3af609e101d011ec8752);
+            
+        
+
+        marker_184a6a635adacec695b475bedcc65ba7.bindPopup(popup_86c53b124cf64c9a054391bfb8cd7e20)
+        ;
+
+        
+    
+    
+            var marker_e3c84993f741bc39b5c56c4b40365626 = L.marker(
+                [-6.6787, 107.5445],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_8f40eac448be17cb29544a8c25a5aae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e3c84993f741bc39b5c56c4b40365626.setIcon(icon_8f40eac448be17cb29544a8c25a5aae7);
+        
+    
+        var popup_662ec578d6e3c86ecb5f88c3d95e1280 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f697d5ef01e2c791275c84284ef87d9f = $(`<div id="html_f697d5ef01e2c791275c84284ef87d9f" style="width: 100.0%; height: 100.0%;">Wanayasa<br>Density Category: Padat</div>`)[0];
+                popup_662ec578d6e3c86ecb5f88c3d95e1280.setContent(html_f697d5ef01e2c791275c84284ef87d9f);
+            
+        
+
+        marker_e3c84993f741bc39b5c56c4b40365626.bindPopup(popup_662ec578d6e3c86ecb5f88c3d95e1280)
+        ;
+
+        
+    
+    
+            var marker_9162ab23dff8edacdbfe38432445190b = L.marker(
+                [-6.6751, 107.5862],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_9e038f5f7857f40e7e607a646cb71cb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9162ab23dff8edacdbfe38432445190b.setIcon(icon_9e038f5f7857f40e7e607a646cb71cb1);
+        
+    
+        var popup_c960a040a38fc07ef2450d76ea069b37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f26180cf11d17c7f4d5cc1074670f11 = $(`<div id="html_7f26180cf11d17c7f4d5cc1074670f11" style="width: 100.0%; height: 100.0%;">Kiarapedes<br>Density Category: Tidak Padat</div>`)[0];
+                popup_c960a040a38fc07ef2450d76ea069b37.setContent(html_7f26180cf11d17c7f4d5cc1074670f11);
+            
+        
+
+        marker_9162ab23dff8edacdbfe38432445190b.bindPopup(popup_c960a040a38fc07ef2450d76ea069b37)
+        ;
+
+        
+    
+    
+            var marker_179dca430c8cae36cb83599747f1cfd2 = L.marker(
+                [-6.5866, 107.4677],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_b0c90f9ef173d410129f639d469d6951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_179dca430c8cae36cb83599747f1cfd2.setIcon(icon_b0c90f9ef173d410129f639d469d6951);
+        
+    
+        var popup_5a50cd1e350925f436e061e6eefb3232 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1912bc62c625d3902faffdeeb963b981 = $(`<div id="html_1912bc62c625d3902faffdeeb963b981" style="width: 100.0%; height: 100.0%;">Pasawahan<br>Density Category: Sangat Padat</div>`)[0];
+                popup_5a50cd1e350925f436e061e6eefb3232.setContent(html_1912bc62c625d3902faffdeeb963b981);
+            
+        
+
+        marker_179dca430c8cae36cb83599747f1cfd2.bindPopup(popup_5a50cd1e350925f436e061e6eefb3232)
+        ;
+
+        
+    
+    
+            var marker_4b38573a0d57d2f2033b2db9fa7c8016 = L.marker(
+                [-6.6135, 107.4814],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_dd01aaaa6ffa7887fed6b64a68a2ac5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4b38573a0d57d2f2033b2db9fa7c8016.setIcon(icon_dd01aaaa6ffa7887fed6b64a68a2ac5e);
+        
+    
+        var popup_3ba48c314f221497cf6705c167b4b660 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_448548ccb2c21aa403086008d0205037 = $(`<div id="html_448548ccb2c21aa403086008d0205037" style="width: 100.0%; height: 100.0%;">Pondoksalam<br>Density Category: Padat</div>`)[0];
+                popup_3ba48c314f221497cf6705c167b4b660.setContent(html_448548ccb2c21aa403086008d0205037);
+            
+        
+
+        marker_4b38573a0d57d2f2033b2db9fa7c8016.bindPopup(popup_3ba48c314f221497cf6705c167b4b660)
+        ;
+
+        
+    
+    
+            var marker_dfa9011c37324963387c23e414187448 = L.marker(
+                [-6.5407, 107.4463],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_5e1e5c87c5463c7b2453a73f568ad132 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dfa9011c37324963387c23e414187448.setIcon(icon_5e1e5c87c5463c7b2453a73f568ad132);
+        
+    
+        var popup_69dd01b7a16c3994b21695c0f980d129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60041d986396822b85d30f5a1863f8f4 = $(`<div id="html_60041d986396822b85d30f5a1863f8f4" style="width: 100.0%; height: 100.0%;">Purwakarta<br>Density Category: Tidak Padat</div>`)[0];
+                popup_69dd01b7a16c3994b21695c0f980d129.setContent(html_60041d986396822b85d30f5a1863f8f4);
+            
+        
+
+        marker_dfa9011c37324963387c23e414187448.bindPopup(popup_69dd01b7a16c3994b21695c0f980d129)
+        ;
+
+        
+    
+    
+            var marker_7aea5ba7804b9402802dac7eab835924 = L.marker(
+                [-6.4934, 107.4025],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_79a060f0a6c2bfbc568a8236986441f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7aea5ba7804b9402802dac7eab835924.setIcon(icon_79a060f0a6c2bfbc568a8236986441f3);
+        
+    
+        var popup_b6086cfb7a5caa9a139c5e0cd93a5ca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa40fbfbebbbb7b7e891a9c8863f732c = $(`<div id="html_aa40fbfbebbbb7b7e891a9c8863f732c" style="width: 100.0%; height: 100.0%;">Babakancikao<br>Density Category: Tidak Padat</div>`)[0];
+                popup_b6086cfb7a5caa9a139c5e0cd93a5ca4.setContent(html_aa40fbfbebbbb7b7e891a9c8863f732c);
+            
+        
+
+        marker_7aea5ba7804b9402802dac7eab835924.bindPopup(popup_b6086cfb7a5caa9a139c5e0cd93a5ca4)
+        ;
+
+        
+    
+    
+            var marker_25e45a30c512c066fce91a3947e98c88 = L.marker(
+                [-6.5115, 107.4804],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_b09a4b1645d0dc262e2cddd4e0633178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_25e45a30c512c066fce91a3947e98c88.setIcon(icon_b09a4b1645d0dc262e2cddd4e0633178);
+        
+    
+        var popup_6e55dd709c7f1d45ca4eef2f3b6322cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e839bc88a66e60ddfa4c925cbe8400a = $(`<div id="html_7e839bc88a66e60ddfa4c925cbe8400a" style="width: 100.0%; height: 100.0%;">Campaka<br>Density Category: Tidak Padat</div>`)[0];
+                popup_6e55dd709c7f1d45ca4eef2f3b6322cb.setContent(html_7e839bc88a66e60ddfa4c925cbe8400a);
+            
+        
+
+        marker_25e45a30c512c066fce91a3947e98c88.bindPopup(popup_6e55dd709c7f1d45ca4eef2f3b6322cb)
+        ;
+
+        
+    
+    
+            var marker_55eb9691a21884db4e73df63ca6dd0cf = L.marker(
+                [-6.5027, 107.5508],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_0134aae3408877a6a5d3dfda5538195c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_55eb9691a21884db4e73df63ca6dd0cf.setIcon(icon_0134aae3408877a6a5d3dfda5538195c);
+        
+    
+        var popup_99943418d918103530c6cae5e9bbf789 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6300908fc57d8bc40b473dfa1da9e78 = $(`<div id="html_d6300908fc57d8bc40b473dfa1da9e78" style="width: 100.0%; height: 100.0%;">Cibatu<br>Density Category: Tidak Padat</div>`)[0];
+                popup_99943418d918103530c6cae5e9bbf789.setContent(html_d6300908fc57d8bc40b473dfa1da9e78);
+            
+        
+
+        marker_55eb9691a21884db4e73df63ca6dd0cf.bindPopup(popup_99943418d918103530c6cae5e9bbf789)
+        ;
+
+        
+    
+    
+            var marker_10d31ae5c9aef09148461e94d7137d2c = L.marker(
+                [-6.4857, 107.4787],
+                {}
+            ).addTo(marker_cluster_80703ae2b49b31d1b82ef25c7a59b392);
+        
+    
+            var icon_f12bbfce1626aba26244d6a1e771987d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_10d31ae5c9aef09148461e94d7137d2c.setIcon(icon_f12bbfce1626aba26244d6a1e771987d);
+        
+    
+        var popup_1c9b0545f0047f90a3a0616612aa28a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_795619a5e383fa3efbc94cf2f098d6c1 = $(`<div id="html_795619a5e383fa3efbc94cf2f098d6c1" style="width: 100.0%; height: 100.0%;">Bungursari<br>Density Category: Tidak Padat</div>`)[0];
+                popup_1c9b0545f0047f90a3a0616612aa28a3.setContent(html_795619a5e383fa3efbc94cf2f098d6c1);
+            
+        
+
+        marker_10d31ae5c9aef09148461e94d7137d2c.bindPopup(popup_1c9b0545f0047f90a3a0616612aa28a3)
+        ;
+
+        
+    
+    
+            marker_cluster_80703ae2b49b31d1b82ef25c7a59b392.addTo(map_52f4e7e5e2c07a065181c54708d62488);
+        
+</script>
+</html>
